@@ -5,6 +5,13 @@ function isLetter(letter){
 }
 
 function getCount(words) {
+  if(!words || typeof words !== 'string'){
+    return {
+      vowels: 0,
+      consonants: 0
+    }
+  }
+  
   words = words.toLowerCase();
   console.log(words);
   const wordChars = words.split('');
@@ -23,8 +30,4 @@ function getCount(words) {
     vowels: numVowels,
     consonants: numLetters - numVowels
   };
-}
-
-function intersection(set1, set2){
-  return new Set([...set1].filter(x => set2.has(x)));
 }
