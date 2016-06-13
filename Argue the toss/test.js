@@ -1,0 +1,5 @@
+Test.assertEquals(anArgument(), "You didn't give me any arguments.", "Your string isn't returning what was expected.");
+Test.assertEquals(anArgument("pigs"), 'You gave me 1 argument and it is "pigs".', "Your string isn't returning what was expected.");
+Test.assertEquals(anArgument("chairs","table","lamp","sideboard"), 'You gave me 4 arguments and they are "chairs", "table", "lamp" and "sideboard".', "Your string isn't returning what was expected. Tip: check the punctuation notes.");
+Test.assertEquals(anArgument("limes","pickles","musk ox"), 'You gave me 3 arguments and they are "limes", "pickles" and "musk ox".', "Your string isn't returning what was expected. Tip: check the punctuation notes.");
+Test.assertEquals(anArgument("trains","trains","trains","trains","trains","trains"), 'You gave me 6 arguments and they are "trains", "trains", "trains", "trains", "trains" and "trains".', "Your string isn't returning what was expected. Tip: check the punctuation notes.");
